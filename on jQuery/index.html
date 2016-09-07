@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/selectric.css">
+  <link rel="stylesheet" href="css/red.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src=https://code.jquery.com/jquery-1.12.4.min.js></script>
+  <script defer src="js/jquery.jcarousel.js"></script>
+  <script defer src="js/jquery.selectric.min.js"></script>
+  <script defer src="js/icheck.min.js"></script>
+  <script defer src="js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h3>jQuery menu</h3>
+  <nav>
+    <div class="nav_wrapper">
+      <ul>
+        <li class="menu_item"><a href="#">Nav 1</a></li>
+        <li class="menu_item"><a href="#">Nav 2</a></li>
+        <li class="menu_item arrow_down">
+          <a href="#">Nav 3</a>
+          <ul class="submenu">
+            <li><a href="#">Nav 3.1</a></li>
+            <li><a href="#">Nav 3.2</a></li>
+            <li><a href="#">Nav 3.3</a></li>
+            <li class="submenu_item">
+              <a href="#">Nav 3.4</a>
+              <ul class="submenu">
+                <li><a href="#">Nav 3.4.1</a></li>
+                <li class="submenu_item">
+                  <a href="#">Nav 3.4.2</a>
+                  <ul class="submenu">
+                    <li><a href="#">Nav 3.4.2.1</a></li>
+                    <li><a href="#">Nav 3.4.2.2</a></li>
+                    <li><a href="#">Nav 3.4.2.3</a></li>
+                    <li><a href="#">Nav 3.4.2.3</a></li>
+                    <li><a href="#">Nav 3.4.2.5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Nav 3.4.3</a></li>
+                <li><a href="#">Nav 3.4.4</a></li>
+                <li><a href="#">Nav 3.4.5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Nav 3.5</a></li>
+          </ul>
+        </li>
+        <li class="menu_item"><a href="#">Nav 4</a></li>
+        <li class="menu_item"><a href="#">Nav 5</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content_wrapper">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi in doloremque, debitis obcaecati alias sed reprehenderit necessitatibus incidunt, amet! Reprehenderit tempora quos ipsa libero suscipit eveniet, quidem, nesciunt expedita?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat culpa inventore et labore error quo totam sequi nulla, optio, ab iste placeat dicta aut, aliquid aspernatur porro ut veniam nam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa mollitia quos nisi facere, error doloribus eligendi recusandae eum temporibus expedita. Possimus nisi aut quae, consequuntur est dignissimos impedit accusantium, cum!</p>
+  </div>
+
+  <h3>jCarousel</h3>
+  <div class="jcarousel-wrapper">
+    <div class="jcarousel">
+      <ul>
+        <li><img src="img/DSC09252.jpg" alt=""></li>
+        <li><img src="img/DSC09261.jpg" alt=""></li>
+        <li><img src="img/DSC09263.jpg" alt=""></li>
+        <li><img src="img/DSC09270.jpg" alt=""></li>
+        <li><img src="img/DSC09273.jpg" alt=""></li>
+        <li><img src="img/DSC09276.jpg" alt=""></li>
+      </ul>
+    </div>
+    <a class="jcarousel-prev" href="#">‹</a>
+    <a class="jcarousel-next" href="#">›</a>
+    <p class="jcarousel-pagination">
+      <a class="active_page" href="#1">1</a>
+      <a href="#2">2</a>
+      <a href="#3">3</a>
+      <a href="#4">4</a>
+      <a href="#5">5</a>
+      <a href="#6">6</a>
+    </p>
+  </div>
+  
+  <h3>Select</h3>
+  <div class="select">
+    <select name="" id="">
+      <option value="Arsenal FC">--Choose your club--</option>
+      <optgroup label="Group A">
+        <option value="Arsenal FC">Arsenal FC</option>
+        <option value="FC Basel 1893">FC Basel 1893</option>
+        <option value="Paris Saint-Germain">Paris Saint-Germain</option>
+        <option value="PFC Ludogorets Razgrad">PFC Ludogorets Razgrad</option>
+      </optgroup>
+      <optgroup label="Group B">
+        <option value="Beşiktaş JK">Beşiktaş JK</option>
+        <option value="FC Dynamo Kyiv">FC Dynamo Kyiv</option>
+        <option value="SL Benfica">SL Benfica</option>
+        <option value="SSC Napoli">SSC Napoli</option>
+      </optgroup>
+      <optgroup label="Group C">
+        <option value="Celtic FC">Celtic FC</option>
+        <option value="FC Barcelona">FC Barcelona</option>
+        <option value="Manchester City FC">Manchester City FC</option>
+        <option value="VfL Borussia">VfL Borussia</option>
+      </optgroup>
+    </select>
+  </div>
+  
+  <h3>jQuery checkboxes</h3>
+  <div class="checkboxes">
+    <label>
+      <input type="checkbox">Unchecked checkbox
+    </label>
+    <label>
+      <input type="checkbox" checked>Checked checkbox
+    </label>
+    <label>
+      <input type="checkbox" disabled>Disabled checkbox
+    </label>
+    <label>
+      <input type="checkbox" checked disabled>Checked and disabled checkbox
+    </label>
+  </div>
+  
+  <h3>CSS checkboxes</h3>
+  <div class="css_checkboxes">
+    <label>
+      <input type="checkbox"><span></span> Unchecked checkbox
+    </label>
+    <label>
+      <input type="checkbox" checked><span></span> Checked checkbox
+    </label>
+    <label>
+      <input type="checkbox" disabled><span></span> Disabled checkbox
+    </label>
+  </div>
+</body>
+</html>

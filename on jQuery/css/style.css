@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Tahoma;
+}
+
+/*jQuery menu*/
+h3 {
+  margin: 20px;
+}
+
+nav {
+  width: 100%;
+  background-color: #ff6464;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav_wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.content_wrapper {
+  margin: 0 auto;
+  padding: 30px 0px;
+  width: 1000px;
+}
+
+.menu_item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu_item>a {
+  display: block;
+  padding: 20px;
+}
+
+.arrow_down {
+  background: url(../img/arrow-down.png) 67px 27px no-repeat;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #e14b4b;
+  z-index: 2;
+}
+
+.submenu>li {
+  padding: 0px 10px;
+}
+
+.submenu>li>a {
+  display: block;
+  padding: 10px 0px;
+  width: 150px;
+  border-bottom: 1px solid #c83232;
+}
+
+.submenu_item {
+  position: relative;
+  background: url(../img/arrow-right.png) 155px 16px no-repeat;
+}
+
+.submenu_item>.submenu {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+}
+
+
+/*jCarousel*/
+.jcarousel-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 448px;
+  height: 310px;
+  border: 10px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #000;
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel-prev, .jcarousel-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background: #4E443C;
+  font: 24px/28px Arial, sans-serif;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 0 0 3px #fff;
+}
+
+.jcarousel-next {
+  right: -50px;
+}
+
+.jcarousel-prev {
+  left: -50px;
+}
+
+.jcarousel-prev:hover, .jcarousel-next:hover {
+  color: white;
+}
+
+.jcarousel-pagination {
+  text-align: center;
+}
+
+.jcarousel-pagination a {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 2px #4e443c;
+  background-color: white;
+  text-indent: -9999px;
+}
+
+.jcarousel-pagination .active_page {
+  background: #4e443c;
+}
+
+
+/*Select*/
+.select {
+  width: 200px;
+  margin-left: 20px;
+}
+
+
+/*jQuery checkboxes*/
+.checkboxes {
+  margin-left: 5px;
+}
+
+.checkboxes label {
+  display: block;
+  margin: 10px;
+}
+   
+
+/*CSS checkboxes*/
+.css_checkboxes {
+  margin-left: 10px;
+}
+
+.css_checkboxes input {
+  display: none;
+}
+
+.css_checkboxes label {
+  display: block;
+  margin: 10px;
+}
+
+.css_checkboxes input+span {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  width: 31px;
+  height: 31px;
+  background: url(../img/polaris.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.css_checkboxes input[type="checkbox"]:checked + span {
+  background-position: -62px 0;
+}
+
+.css_checkboxes input[type="checkbox"]:disabled + span {
+  background-position: -93px 0;
+}
+
+.css_checkboxes span:hover {
+  background-position: -31px 0;
+}
